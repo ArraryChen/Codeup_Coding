@@ -19,9 +19,13 @@ int main(){
 		{
 			printf("%04d-%02d-%02d\n", year, month, day+1);
 		}
-		else
+		else if ( month + 1 <= 12 )
 		{
 			printf("%04d-%02d-01\n", year, month+1);
+		}
+		else
+		{
+			printf("%04d-01-01\n", year+1);
 		}
 
 		m--;
