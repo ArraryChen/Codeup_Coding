@@ -13,9 +13,8 @@ int n, m, inDegree[maxv];
 vector<int> ans;
 vector<int> Adj[maxv];
 
-bool topo(){
+void topo(){
 
-	int num = 0;
 	set<int> q;
 	for (int i = 1; i <= n; i++)
 	{
@@ -42,10 +41,7 @@ bool topo(){
 		}
 		Adj[u].clear();
 
-		num++;
 	}
-	if (num == n) return true;
-	else return false;
 }
 
 int main(){
